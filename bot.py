@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-ANTHROPIC_KEY = "sk-ant-api03-8FzUVmbVQJEbYKbtC_NC5AyeiOFy6n2FldFKbAcvTmHqc2px_xFccPNOSUc0hGp-4L3kO_BNeZAqasH2Oo5m4w-NcyaAgAA"
+ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY")
 OWNER_CHAT_ID = os.environ.get("OWNER_CHAT_ID")
 
 client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
